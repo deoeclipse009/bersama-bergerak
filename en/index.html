@@ -105,11 +105,15 @@
         </div>
         <div class="grid grid-3">
           <article class="card feature-card">
-            <div class="mock" aria-hidden="true">
-              <div class="mock-row"><span class="dot"></span>A. Fatigue</div>
-              <div class="mock-row"><span class="dot on"></span>B. Pain</div>
-              <div class="mock-row"><span class="dot"></span>C. Sleep</div>
-              <div class="mock-row"><span class="dot"></span>D. Hydration</div>
+            <div class="mock" data-quiz>
+              <button type="button" class="mock-row" data-result="h-rc-a" aria-pressed="false"><span class="dot"></span>A. Fatigue</button>
+              <button type="button" class="mock-row" data-result="h-rc-b" aria-pressed="false"><span class="dot"></span>B. Pain</button>
+              <button type="button" class="mock-row" data-result="h-rc-c" aria-pressed="false"><span class="dot"></span>C. Sleep</button>
+              <button type="button" class="mock-row" data-result="h-rc-d" aria-pressed="false"><span class="dot"></span>D. Hydration</button>
+              <div class="result mini-result" id="h-rc-a" tabindex="-1" hidden><p>“When the same pace suddenly feels very different, pay attention.” Before the start, check: does your energy feel normal or low?</p><a href="runner-reset-guide.html#rr-1">Read it in the Runner Reset Guide: 01 · Before you run →</a></div>
+              <div class="result mini-result" id="h-rc-b" tabindex="-1" hidden><p>Pain that changes the way you run is a <strong>yellow signal</strong>: Slow down → Check → Decide.</p><a href="runner-reset-guide.html#rr-2">Read it in the Runner Reset Guide: 02 · During the race →</a></div>
+              <div class="result mini-result" id="h-rc-c" tabindex="-1" hidden><p>Well rested or short on sleep? Take 2–3 minutes to check in with your body and mind before the start.</p><a href="runner-reset-guide.html#rr-1">Read it in the Runner Reset Guide: 01 · Before you run →</a></div>
+              <div class="result mini-result" id="h-rc-d" tabindex="-1" hidden><p>Fed and hydrated enough for today's race conditions? Fluid and fuel shape how your body responds.</p><a href="runner-reset-guide.html#rr-8">Read it in the Runner Reset Guide: 08 · Trail/race-specific →</a></div>
             </div>
             <div class="body">
               <h3>1-Minute Runner Check</h3>
@@ -117,10 +121,17 @@
             </div>
           </article>
           <article class="card feature-card">
-            <div class="mock" aria-hidden="true">
-              <div class="mock-row" style="background:var(--navy-800);color:#fff">KM 8. Your knee feels off. Your friend yells “Gas! 2 km left!”</div>
-              <div class="mock-row"><span class="dot"></span>Slow down &amp; assess</div>
-              <span class="mock-pill">Feel → Think → Decide</span>
+            <div class="mock" data-quiz>
+              <div class="mock-row dark">KM 8. Your knee feels off. Your friend yells “Gas! 2 km left!”</div>
+              <button type="button" class="mock-row" data-result="h-dt-a" aria-pressed="false"><span class="dot"></span>A. Gas. Don't be weak.</button>
+              <button type="button" class="mock-row" data-result="h-dt-b" aria-pressed="false"><span class="dot"></span>B. Slow down &amp; assess</button>
+              <button type="button" class="mock-row" data-result="h-dt-c" aria-pressed="false"><span class="dot"></span>C. Stop &amp; reassess</button>
+              <button type="button" class="mock-row" data-result="h-dt-d" aria-pressed="false"><span class="dot"></span>D. Depends</button>
+              <div class="result mini-result" id="h-dt-a" tabindex="-1" hidden><p>Who made that call: your knee, your goal or your ego? Pushing can be fine when it's a choice, not a reflex.</p><a href="runner-reset-guide.html#decision-test">See the full explanation →</a></div>
+              <div class="result mini-result" id="h-dt-b" tabindex="-1" hidden><p>You gave yourself time to gather information before committing. That's self-regulation.</p><a href="runner-reset-guide.html#decision-test">See the full explanation →</a></div>
+              <div class="result mini-result" id="h-dt-c" tabindex="-1" hidden><p>Stopping to check isn't quitting. It's how you keep running for years.</p><a href="runner-reset-guide.html#decision-test">See the full explanation →</a></div>
+              <div class="result mini-result" id="h-dt-d" tabindex="-1" hidden><p>Exactly. “It depends” is the start of a good decision, as long as you actually check.</p><a href="runner-reset-guide.html#decision-test">See the full explanation →</a></div>
+              <a class="mock-pill" href="runner-reset-guide.html#rr-5">Feel → Think → Decide</a>
             </div>
             <div class="body">
               <h3>The Runner Decision Test</h3>
@@ -128,11 +139,11 @@
             </div>
           </article>
           <article class="card feature-card">
-            <div class="mock" aria-hidden="true">
-              <div class="mock-row">01 · Before you run</div>
-              <div class="mock-row">02 · During the race</div>
-              <div class="mock-row">03 · The 30-second reset</div>
-              <span class="mock-pill">Scan the QR</span>
+            <div class="mock">
+              <a class="mock-row link" href="runner-reset-guide.html#rr-1">01 · Before you run<span aria-hidden="true">→</span></a>
+              <a class="mock-row link" href="runner-reset-guide.html#rr-2">02 · During the race<span aria-hidden="true">→</span></a>
+              <a class="mock-row link" href="runner-reset-guide.html#rr-3">03 · The 30-second reset<span aria-hidden="true">→</span></a>
+              <a class="mock-pill" href="runner-reset-guide.html">Open the full guide</a>
             </div>
             <div class="body">
               <h3>Runner Reset Guide</h3>

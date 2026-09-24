@@ -579,3 +579,18 @@ table.compact { min-width: 0; }
 .choice input { flex: none; }
 .reset-grid { align-items: start; }
 .branches::after { content: ""; position: absolute; top: -22px; left: 50%; width: 2px; height: 10px; background: var(--line); }
+.rr-verify { display: inline-flex; align-items: center; gap: 8px; margin: 4px auto 22px; font-size: 14.5px; color: var(--ink-2); }
+.rr-verify svg { width: 20px; height: 20px; color: #17744f; flex: none; }
+
+/* Home: interactive example cards */
+button.mock-row { width: 100%; border: 1px solid transparent; font: inherit; font-size: 13.5px; font-weight: 500; text-align: left; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
+button.mock-row:hover { border-color: var(--line); box-shadow: 0 4px 12px -8px rgba(15,27,61,.35); }
+button.mock-row[aria-pressed="true"] { border-color: var(--navy-800); color: var(--ink); font-weight: 600; }
+button.mock-row[aria-pressed="true"] .dot { border: 5px solid var(--navy-800); }
+a.mock-row.link { justify-content: space-between; text-decoration: none; color: var(--ink-2); border: 1px solid transparent; }
+a.mock-row.link:hover { border-color: var(--line); color: var(--blue-600); }
+a.mock-pill { text-decoration: none; }
+a.mock-pill:hover { background: var(--navy-700); color: #fff; }
+.mini-result { margin: 4px 0 0; padding: 14px 16px; background: #fff; border-radius: 12px; font-size: 14px; }
+.mini-result p { margin: 0 0 8px; color: var(--ink-2); }
+.mini-result a { font-weight: 600; font-size: 13.5px; text-decoration: none; }

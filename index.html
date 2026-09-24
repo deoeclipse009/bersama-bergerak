@@ -105,11 +105,15 @@
         </div>
         <div class="grid grid-3">
           <article class="card feature-card">
-            <div class="mock" aria-hidden="true">
-              <div class="mock-row"><span class="dot"></span>A. Kelelahan</div>
-              <div class="mock-row"><span class="dot on"></span>B. Nyeri</div>
-              <div class="mock-row"><span class="dot"></span>C. Tidur</div>
-              <div class="mock-row"><span class="dot"></span>D. Hidrasi</div>
+            <div class="mock" data-quiz>
+              <button type="button" class="mock-row" data-result="h-rc-a" aria-pressed="false"><span class="dot"></span>A. Kelelahan</button>
+              <button type="button" class="mock-row" data-result="h-rc-b" aria-pressed="false"><span class="dot"></span>B. Nyeri</button>
+              <button type="button" class="mock-row" data-result="h-rc-c" aria-pressed="false"><span class="dot"></span>C. Tidur</button>
+              <button type="button" class="mock-row" data-result="h-rc-d" aria-pressed="false"><span class="dot"></span>D. Hidrasi</button>
+              <div class="result mini-result" id="h-rc-a" tabindex="-1" hidden><p>“When the same pace suddenly feels very different, pay attention.” Sebelum start, cek dulu: energi terasa normal atau drop?</p><a href="runner-reset-guide.html#rr-1">Baca di Runner Reset Guide: 01 · Before you run →</a></div>
+              <div class="result mini-result" id="h-rc-b" tabindex="-1" hidden><p>Nyeri yang mengubah cara berlari adalah <strong>yellow signal</strong>: Slow down → Check → Decide.</p><a href="runner-reset-guide.html#rr-2">Baca di Runner Reset Guide: 02 · During the race →</a></div>
+              <div class="result mini-result" id="h-rc-c" tabindex="-1" hidden><p>Tidur cukup atau kurang? Luangkan 2–3 menit untuk cek kondisi tubuh dan pikiranmu sebelum start.</p><a href="runner-reset-guide.html#rr-1">Baca di Runner Reset Guide: 01 · Before you run →</a></div>
+              <div class="result mini-result" id="h-rc-d" tabindex="-1" hidden><p>Sudah makan &amp; minum dengan cukup untuk kondisi race hari ini? Fluid dan fuel ikut memengaruhi respons tubuhmu.</p><a href="runner-reset-guide.html#rr-8">Baca di Runner Reset Guide: 08 · Trail/race-specific →</a></div>
             </div>
             <div class="body">
               <h3>1-Minute Runner Check</h3>
@@ -117,10 +121,17 @@
             </div>
           </article>
           <article class="card feature-card">
-            <div class="mock" aria-hidden="true">
-              <div class="mock-row" style="background:var(--navy-800);color:#fff">KM 8. Lutut mulai tidak nyaman. Temanmu teriak “Gas! Tinggal 2 km!”</div>
-              <div class="mock-row"><span class="dot"></span>Pelankan &amp; cek kondisi</div>
-              <span class="mock-pill">Feel → Think → Decide</span>
+            <div class="mock" data-quiz>
+              <div class="mock-row dark">KM 8. Lutut mulai tidak nyaman. Temanmu teriak “Gas! Tinggal 2 km!”</div>
+              <button type="button" class="mock-row" data-result="h-dt-a" aria-pressed="false"><span class="dot"></span>A. Gas. Jangan lemah.</button>
+              <button type="button" class="mock-row" data-result="h-dt-b" aria-pressed="false"><span class="dot"></span>B. Pelankan &amp; cek kondisi</button>
+              <button type="button" class="mock-row" data-result="h-dt-c" aria-pressed="false"><span class="dot"></span>C. Berhenti &amp; evaluasi ulang</button>
+              <button type="button" class="mock-row" data-result="h-dt-d" aria-pressed="false"><span class="dot"></span>D. Tergantung</button>
+              <div class="result mini-result" id="h-dt-a" tabindex="-1" hidden><p>Siapa yang memutuskan: lututmu, targetmu, atau egomu? Push boleh, asal itu pilihan, bukan refleks.</p><a href="runner-reset-guide.html#decision-test">Lihat penjelasan lengkap →</a></div>
+              <div class="result mini-result" id="h-dt-b" tabindex="-1" hidden><p>Kamu memberi dirimu waktu untuk mengumpulkan informasi sebelum memutuskan. Itulah self-regulation.</p><a href="runner-reset-guide.html#decision-test">Lihat penjelasan lengkap →</a></div>
+              <div class="result mini-result" id="h-dt-c" tabindex="-1" hidden><p>Berhenti untuk mengecek bukan berarti menyerah. Itu cara memastikan kamu tetap bisa berlari bertahun-tahun.</p><a href="runner-reset-guide.html#decision-test">Lihat penjelasan lengkap →</a></div>
+              <div class="result mini-result" id="h-dt-d" tabindex="-1" hidden><p>Tepat. “Tergantung” adalah awal keputusan yang baik, asal kamu benar-benar mengecek kondisimu.</p><a href="runner-reset-guide.html#decision-test">Lihat penjelasan lengkap →</a></div>
+              <a class="mock-pill" href="runner-reset-guide.html#rr-5">Feel → Think → Decide</a>
             </div>
             <div class="body">
               <h3>The Runner Decision Test</h3>
@@ -128,11 +139,11 @@
             </div>
           </article>
           <article class="card feature-card">
-            <div class="mock" aria-hidden="true">
-              <div class="mock-row">01 · Before you run</div>
-              <div class="mock-row">02 · During the race</div>
-              <div class="mock-row">03 · The 30-second reset</div>
-              <span class="mock-pill">Scan QR</span>
+            <div class="mock">
+              <a class="mock-row link" href="runner-reset-guide.html#rr-1">01 · Before you run<span aria-hidden="true">→</span></a>
+              <a class="mock-row link" href="runner-reset-guide.html#rr-2">02 · During the race<span aria-hidden="true">→</span></a>
+              <a class="mock-row link" href="runner-reset-guide.html#rr-3">03 · The 30-second reset<span aria-hidden="true">→</span></a>
+              <a class="mock-pill" href="runner-reset-guide.html">Buka panduan lengkap</a>
             </div>
             <div class="body">
               <h3>Runner Reset Guide</h3>

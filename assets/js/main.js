@@ -13,7 +13,7 @@
 
   // Quizzes: each option button points at a result panel via data-result
   document.querySelectorAll('[data-quiz]').forEach(function (quiz) {
-    var buttons = quiz.querySelectorAll('.options button');
+    var buttons = quiz.querySelectorAll('button[data-result]');
     var results = quiz.querySelectorAll('.result');
     buttons.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -21,7 +21,7 @@
         btn.setAttribute('aria-pressed', 'true');
         results.forEach(function (r) { r.hidden = r.id !== btn.dataset.result; });
         var shown = document.getElementById(btn.dataset.result);
-        if (shown) shown.focus({ preventScroll: false });
+        if (shown) shown.focus({ preventScroll: true });
       });
     });
   });
