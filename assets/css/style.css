@@ -594,3 +594,24 @@ a.mock-pill:hover { background: var(--navy-700); color: #fff; }
 .mini-result { margin: 4px 0 0; padding: 14px 16px; background: #fff; border-radius: 12px; font-size: 14px; }
 .mini-result p { margin: 0 0 8px; color: var(--ink-2); }
 .mini-result a { font-weight: 600; font-size: 13.5px; text-decoration: none; }
+
+/* Single-column option list (Run Safe Playground scenario) */
+.options.one { grid-template-columns: 1fr; }
+.choice-list .mini-result { margin-top: 12px; background: #fff; box-shadow: var(--shadow); padding: 16px 18px; }
+
+/* Two-option check items (Runner Reset Guide 01 & 09) */
+.check-tool { display: grid; gap: 8px; }
+.toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; background: var(--well); border-radius: 14px; padding: 10px 12px 10px 16px; }
+.toggle-q { font-weight: 500; font-size: 15px; color: var(--ink-2); }
+.seg2 { display: inline-flex; flex: none; background: #fff; border-radius: 999px; padding: 3px; box-shadow: 0 1px 2px rgba(15,27,61,.08); }
+.seg2 button { font: inherit; font-size: 13.5px; font-weight: 600; border: 0; background: none; color: var(--ink-soft); padding: 6px 14px; border-radius: 999px; cursor: pointer; white-space: nowrap; }
+.seg2 button:hover { color: var(--ink); }
+.seg2 button[data-v="ok"][aria-pressed="true"] { background: var(--navy-800); color: #fff; }
+.seg2 button[data-v="flag"][aria-pressed="true"] { background: #d99a12; color: #fff; }
+.check-hint { margin: 4px 2px 0; font-size: 13.5px; color: var(--ink-mute); }
+.check-tool .result { margin-top: 6px; }
+.check-flag { background: #fdf4de !important; }
+.check-flag ul { margin: 0 0 10px; padding-left: 20px; color: var(--ink-2); }
+.check-ok { background: #e8f7f0 !important; }
+.check-tool .result a { font-weight: 600; text-decoration: none; }
+@media (max-width: 520px) { .toggle-row { flex-direction: column; align-items: flex-start; gap: 8px; } }

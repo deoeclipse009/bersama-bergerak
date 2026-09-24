@@ -94,12 +94,31 @@
           </div>
           <div class="card">
             <h3>Today, my body is…</h3>
-            <div class="form">
-              <label class="choice"><input type="checkbox" name="today"> Tidur cukup / kurang</label>
-              <label class="choice"><input type="checkbox" name="today"> Energi terasa normal / drop</label>
-              <label class="choice"><input type="checkbox" name="today"> Ada nyeri yang baru muncul / nyeri lama berubah</label>
-              <label class="choice"><input type="checkbox" name="today"> Sedang sakit / baru pulih dari sakit</label>
-              <label class="choice"><input type="checkbox" name="today"> Sudah makan &amp; minum dengan cukup untuk kondisi race hari ini</label>
+
+            <div class="check-tool" data-check>
+              <div class="toggle-row" data-flag-label="Tidur kurang">
+                <span class="toggle-q">Tidur</span>
+                <span class="seg2" role="group" aria-label="Tidur"><button type="button" data-v="ok" aria-pressed="false">Cukup</button><button type="button" data-v="flag" aria-pressed="false">Kurang</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Energi drop">
+                <span class="toggle-q">Energi</span>
+                <span class="seg2" role="group" aria-label="Energi"><button type="button" data-v="ok" aria-pressed="false">Normal</button><button type="button" data-v="flag" aria-pressed="false">Drop</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Ada nyeri baru atau nyeri lama berubah">
+                <span class="toggle-q">Nyeri baru / nyeri lama berubah</span>
+                <span class="seg2" role="group" aria-label="Nyeri baru / nyeri lama berubah"><button type="button" data-v="ok" aria-pressed="false">Tidak ada</button><button type="button" data-v="flag" aria-pressed="false">Ada</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Sedang sakit atau baru pulih dari sakit">
+                <span class="toggle-q">Sedang sakit / baru pulih dari sakit</span>
+                <span class="seg2" role="group" aria-label="Sedang sakit / baru pulih dari sakit"><button type="button" data-v="ok" aria-pressed="false">Tidak</button><button type="button" data-v="flag" aria-pressed="false">Ya</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Belum cukup makan &amp; minum">
+                <span class="toggle-q">Sudah makan &amp; minum cukup untuk kondisi race hari ini</span>
+                <span class="seg2" role="group" aria-label="Sudah makan &amp; minum cukup untuk kondisi race hari ini"><button type="button" data-v="ok" aria-pressed="false">Sudah</button><button type="button" data-v="flag" aria-pressed="false">Belum</button></span>
+              </div>
+              <p class="check-hint">Jawab semua untuk melihat hasilnya.</p>
+              <div class="result check-flag" hidden><p><strong>Perlu diperhatikan hari ini:</strong></p><ul></ul><p>Pertanyaan penting: <strong>“Kalau kondisi ini memburuk saat race, apa rencanaku?”</strong></p></div>
+              <div class="result check-ok" hidden><p>Kondisimu hari ini terlihat siap. Tetap dengarkan sinyal tubuhmu selama race.</p><a href="#rr-2">Lanjut ke 02 · During the race →</a></div>
             </div>
           </div>
         </div>
@@ -277,12 +296,31 @@
         <div class="split top">
           <div class="card">
             <h3>How did your body actually do?</h3>
-            <div class="form">
-              <label class="choice"><input type="checkbox" name="after"> Ada nyeri baru?</label>
-              <label class="choice"><input type="checkbox" name="after"> Ada pusing / mual / lemas yang tidak biasa?</label>
-              <label class="choice"><input type="checkbox" name="after"> Ada bagian tubuh yang terasa berbeda setelah finish?</label>
-              <label class="choice"><input type="checkbox" name="after"> Ada gejala yang masih bertahan setelah recovery?</label>
-              <label class="choice"><input type="checkbox" name="after"> Apakah kondisi membaik setelah istirahat, makan/minum, dan cooling down?</label>
+
+            <div class="check-tool" data-check>
+              <div class="toggle-row" data-flag-label="Nyeri baru">
+                <span class="toggle-q">Ada nyeri baru?</span>
+                <span class="seg2" role="group" aria-label="Ada nyeri baru?"><button type="button" data-v="ok" aria-pressed="false">Tidak</button><button type="button" data-v="flag" aria-pressed="false">Ya</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Pusing / mual / lemas yang tidak biasa">
+                <span class="toggle-q">Ada pusing / mual / lemas yang tidak biasa?</span>
+                <span class="seg2" role="group" aria-label="Ada pusing / mual / lemas yang tidak biasa?"><button type="button" data-v="ok" aria-pressed="false">Tidak</button><button type="button" data-v="flag" aria-pressed="false">Ya</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Ada bagian tubuh yang terasa berbeda">
+                <span class="toggle-q">Ada bagian tubuh yang terasa berbeda setelah finish?</span>
+                <span class="seg2" role="group" aria-label="Ada bagian tubuh yang terasa berbeda setelah finish?"><button type="button" data-v="ok" aria-pressed="false">Tidak</button><button type="button" data-v="flag" aria-pressed="false">Ya</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Gejala masih bertahan setelah recovery">
+                <span class="toggle-q">Ada gejala yang masih bertahan setelah recovery?</span>
+                <span class="seg2" role="group" aria-label="Ada gejala yang masih bertahan setelah recovery?"><button type="button" data-v="ok" aria-pressed="false">Tidak</button><button type="button" data-v="flag" aria-pressed="false">Ya</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Kondisi belum membaik">
+                <span class="toggle-q">Apakah kondisi membaik setelah istirahat, makan/minum, dan cooling down?</span>
+                <span class="seg2" role="group" aria-label="Apakah kondisi membaik setelah istirahat, makan/minum, dan cooling down?"><button type="button" data-v="ok" aria-pressed="false">Ya</button><button type="button" data-v="flag" aria-pressed="false">Tidak</button></span>
+              </div>
+              <p class="check-hint">Jawab semua untuk melihat hasilnya.</p>
+              <div class="result check-flag" hidden><p><strong>Catat ini:</strong></p><ul></ul><p>Simpan di <a href="#rr-10">My Runner Signal Log</a>. Kalau kondisi makin memburuk, itu <a href="#rr-4">red signal</a>: <strong>Don't push through. Get help.</strong></p></div>
+              <div class="result check-ok" hidden><p>Tubuhmu terlihat pulih dengan baik. Tetap catat apa yang kamu rasakan untuk race berikutnya.</p><a href="#rr-10">Isi My Runner Signal Log →</a></div>
             </div>
           </div>
           <div>
@@ -326,7 +364,7 @@
             <div><label class="lbl" for="lg-next">What happened next?</label><textarea id="lg-next" rows="3"></textarea></div>
             <div><label class="lbl" for="lg-will">Next time I will…</label><textarea id="lg-will" rows="3"></textarea></div>
           </div>
-          <div><button class="btn" type="button" data-print-log><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>Cetak log</button></div>
+          <div class="btn-row"><button class="btn" type="button" data-print-log><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>Cetak log</button><button class="btn btn-ghost" type="button" data-clear-log>Kosongkan</button><span class="small muted">Isian otomatis tersimpan di perangkat ini.</span></div>
         </form>
       </div>
     </section>

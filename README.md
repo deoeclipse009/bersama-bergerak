@@ -35,3 +35,7 @@ Every page has an **ID / EN** switch in the header that jumps to the same page i
 - **Style:** calm, minimal layout: soft light-blue hero, floating pill navigation, rounded cards with soft shadows, dark icon badges and pill buttons.
 - **Fonts** are self-hosted in `assets/fonts/` (Inter Tight for headings, Inter for text, Instrument Serif for italic accents), so the site doesn't depend on Google Fonts at the venue.
 - All styles are in `assets/css/style.css`.
+
+## Checking the site
+
+`node tests/check-site.js` opens every page in both languages (desktop and phone width) and checks links, the menu, the language switch, every quiz option, the Runner Reset checks, the signal log (save, print, clear) and the WhatsApp form. It needs Playwright with Chromium.

@@ -91,3 +91,63 @@
     document.body.classList.remove('printing-log');
   });
 })();
+
+// Runner Reset Guide 01 & 09: two-option checks with a result once every item is answered
+document.querySelectorAll('[data-check]').forEach(function (tool) {
+  var rows = tool.querySelectorAll('.toggle-row');
+  var flagBox = tool.querySelector('.check-flag');
+  var okBox = tool.querySelector('.check-ok');
+  var hint = tool.querySelector('.check-hint');
+  var list = flagBox.querySelector('ul');
+  function update() {
+    var answered = 0, flags = [];
+    rows.forEach(function (row) {
+      var on = row.querySelector('button[aria-pressed="true"]');
+      if (!on) return;
+      answered++;
+      if (on.dataset.v === 'flag') flags.push(row.dataset.flagLabel);
+    });
+    var done = answered === rows.length;
+    list.innerHTML = '';
+    flags.forEach(function (f) { var li = document.createElement('li'); li.innerHTML = f; list.appendChild(li); });
+    flagBox.hidden = flags.length === 0;
+    okBox.hidden = !(done && flags.length === 0);
+    hint.hidden = done || flags.length > 0;
+  }
+  rows.forEach(function (row) {
+    row.querySelectorAll('button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        row.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); });
+        btn.setAttribute('aria-pressed', 'true');
+        update();
+      });
+    });
+  });
+});
+
+// Runner Reset Guide 10: keep the signal log on this device
+(function () {
+  var log = document.getElementById('signal-log');
+  if (!log) return;
+  var key = 'bb-signal-log-' + (document.documentElement.lang || 'id');
+  var fields = log.querySelectorAll('input, textarea');
+  function save() {
+    var data = [];
+    fields.forEach(function (f) { data.push(f.type === 'checkbox' ? f.checked : f.value); });
+    try { localStorage.setItem(key, JSON.stringify(data)); } catch (e) {}
+  }
+  try {
+    var saved = JSON.parse(localStorage.getItem(key) || 'null');
+    if (saved) fields.forEach(function (f, i) {
+      if (saved[i] === undefined) return;
+      if (f.type === 'checkbox') f.checked = !!saved[i]; else f.value = saved[i];
+    });
+  } catch (e) {}
+  log.addEventListener('input', save);
+  log.addEventListener('change', save);
+  var clear = log.querySelector('[data-clear-log]');
+  if (clear) clear.addEventListener('click', function () {
+    fields.forEach(function (f) { if (f.type === 'checkbox') f.checked = false; else f.value = ''; });
+    try { localStorage.removeItem(key); } catch (e) {}
+  });
+})();

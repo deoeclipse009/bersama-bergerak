@@ -94,12 +94,31 @@
           </div>
           <div class="card">
             <h3>Today, my body is…</h3>
-            <div class="form">
-              <label class="choice"><input type="checkbox" name="today"> Well rested / short on sleep</label>
-              <label class="choice"><input type="checkbox" name="today"> Energy feels normal / low</label>
-              <label class="choice"><input type="checkbox" name="today"> A new pain has appeared / an old pain has changed</label>
-              <label class="choice"><input type="checkbox" name="today"> Unwell / just recovering from illness</label>
-              <label class="choice"><input type="checkbox" name="today"> Fed and hydrated enough for today's race conditions</label>
+
+            <div class="check-tool" data-check>
+              <div class="toggle-row" data-flag-label="Short on sleep">
+                <span class="toggle-q">Sleep</span>
+                <span class="seg2" role="group" aria-label="Sleep"><button type="button" data-v="ok" aria-pressed="false">Enough</button><button type="button" data-v="flag" aria-pressed="false">Short</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Low energy">
+                <span class="toggle-q">Energy</span>
+                <span class="seg2" role="group" aria-label="Energy"><button type="button" data-v="ok" aria-pressed="false">Normal</button><button type="button" data-v="flag" aria-pressed="false">Low</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="New pain or an old pain that has changed">
+                <span class="toggle-q">New pain / an old pain has changed</span>
+                <span class="seg2" role="group" aria-label="New pain / an old pain has changed"><button type="button" data-v="ok" aria-pressed="false">No</button><button type="button" data-v="flag" aria-pressed="false">Yes</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Unwell or just recovering from illness">
+                <span class="toggle-q">Unwell / just recovering from illness</span>
+                <span class="seg2" role="group" aria-label="Unwell / just recovering from illness"><button type="button" data-v="ok" aria-pressed="false">No</button><button type="button" data-v="flag" aria-pressed="false">Yes</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Not fed or hydrated enough yet">
+                <span class="toggle-q">Fed and hydrated enough for today's race</span>
+                <span class="seg2" role="group" aria-label="Fed and hydrated enough for today's race"><button type="button" data-v="ok" aria-pressed="false">Yes</button><button type="button" data-v="flag" aria-pressed="false">Not yet</button></span>
+              </div>
+              <p class="check-hint">Answer every item to see your result.</p>
+              <div class="result check-flag" hidden><p><strong>Worth paying attention to today:</strong></p><ul></ul><p>The important question: <strong>“If this gets worse during the race, what's my plan?”</strong></p></div>
+              <div class="result check-ok" hidden><p>You look ready today. Keep listening to your body during the race.</p><a href="#rr-2">Continue to 02 · During the race →</a></div>
             </div>
           </div>
         </div>
@@ -277,12 +296,31 @@
         <div class="split top">
           <div class="card">
             <h3>How did your body actually do?</h3>
-            <div class="form">
-              <label class="choice"><input type="checkbox" name="after"> Any new pain?</label>
-              <label class="choice"><input type="checkbox" name="after"> Any unusual dizziness, nausea or weakness?</label>
-              <label class="choice"><input type="checkbox" name="after"> Any part of your body that feels different after the finish?</label>
-              <label class="choice"><input type="checkbox" name="after"> Any symptoms still there after recovery?</label>
-              <label class="choice"><input type="checkbox" name="after"> Did things improve after rest, food/drink and cooling down?</label>
+
+            <div class="check-tool" data-check>
+              <div class="toggle-row" data-flag-label="New pain">
+                <span class="toggle-q">Any new pain?</span>
+                <span class="seg2" role="group" aria-label="Any new pain?"><button type="button" data-v="ok" aria-pressed="false">No</button><button type="button" data-v="flag" aria-pressed="false">Yes</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Unusual dizziness, nausea or weakness">
+                <span class="toggle-q">Any unusual dizziness, nausea or weakness?</span>
+                <span class="seg2" role="group" aria-label="Any unusual dizziness, nausea or weakness?"><button type="button" data-v="ok" aria-pressed="false">No</button><button type="button" data-v="flag" aria-pressed="false">Yes</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Part of your body feels different">
+                <span class="toggle-q">Any part of your body that feels different after the finish?</span>
+                <span class="seg2" role="group" aria-label="Any part of your body that feels different after the finish?"><button type="button" data-v="ok" aria-pressed="false">No</button><button type="button" data-v="flag" aria-pressed="false">Yes</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Symptoms still there after recovery">
+                <span class="toggle-q">Any symptoms still there after recovery?</span>
+                <span class="seg2" role="group" aria-label="Any symptoms still there after recovery?"><button type="button" data-v="ok" aria-pressed="false">No</button><button type="button" data-v="flag" aria-pressed="false">Yes</button></span>
+              </div>
+              <div class="toggle-row" data-flag-label="Not improving yet">
+                <span class="toggle-q">Did things improve after rest, food/drink and cooling down?</span>
+                <span class="seg2" role="group" aria-label="Did things improve after rest, food/drink and cooling down?"><button type="button" data-v="ok" aria-pressed="false">Yes</button><button type="button" data-v="flag" aria-pressed="false">No</button></span>
+              </div>
+              <p class="check-hint">Answer every item to see your result.</p>
+              <div class="result check-flag" hidden><p><strong>Note this down:</strong></p><ul></ul><p>Save it in <a href="#rr-10">My Runner Signal Log</a>. If things get worse, that's a <a href="#rr-4">red signal</a>: <strong>Don't push through. Get help.</strong></p></div>
+              <div class="result check-ok" hidden><p>Your body looks like it's recovering well. Still, note how you felt for your next race.</p><a href="#rr-10">Fill in My Runner Signal Log →</a></div>
             </div>
           </div>
           <div>
@@ -326,7 +364,7 @@
             <div><label class="lbl" for="lg-next">What happened next?</label><textarea id="lg-next" rows="3"></textarea></div>
             <div><label class="lbl" for="lg-will">Next time I will…</label><textarea id="lg-will" rows="3"></textarea></div>
           </div>
-          <div><button class="btn" type="button" data-print-log><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>Print the log</button></div>
+          <div class="btn-row"><button class="btn" type="button" data-print-log><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>Print the log</button><button class="btn btn-ghost" type="button" data-clear-log>Clear</button><span class="small muted">Your entries are saved on this device.</span></div>
         </form>
       </div>
     </section>
