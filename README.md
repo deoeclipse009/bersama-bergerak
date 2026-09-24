@@ -33,6 +33,6 @@ Every page has an **ID / EN** switch in the header that jumps to the same page i
 
 - **Logo:** `assets/img/logo.png` (full logo, transparent) and `assets/img/logo-mark.png` (icon, used in the header, footer and browser tab). The original is `assets/img/bersama-bergerak-logo.jpg`.
 - **Colours** come from the logo: navy `#13265a`, blues `#1f63c4` / `#2f7fe6`, with coral and green for data highlights.
-- **Style:** calm, minimal layout with a painted-sky hero (`assets/img/sky.svg`), floating pill navigation, rounded cards and dashboard-style data blocks.
+- **Style:** calm, minimal layout: soft light-blue hero, floating pill navigation, rounded cards with soft shadows, dark icon badges and pill buttons.
 - **Fonts** are self-hosted in `assets/fonts/` (Inter Tight for headings, Inter for text, Instrument Serif for italic accents), so the site doesn't depend on Google Fonts at the venue.
 - All styles are in `assets/css/style.css`.
