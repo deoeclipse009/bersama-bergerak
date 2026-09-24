@@ -29,4 +29,10 @@ Every page has an **ID / EN** switch in the header that jumps to the same page i
 - **Lead form:** put the team's WhatsApp number in `data-whatsapp` on the `<form id="lead-form">` in both `work-with-us.html` and `en/work-with-us.html` (format `628xxxxxxxxxx`). Submissions then open WhatsApp with the visitor's answers pre-filled. Without a number, the visitor sees a summary and is asked to DM @bersamabergerak.id.
 - Times marked *tentative* on `schedule.html` should be updated when the final rundown is confirmed.
 
-Colours come from the logo (`assets/img/bersama-bergerak-logo.jpg`): navy `#13265a`, blues `#1f63c4` / `#2a7de1`. All styles are in `assets/css/style.css`.
+## Design
+
+- **Logo:** `assets/img/logo.png` (full logo, transparent) and `assets/img/logo-mark.png` (icon, used in the header, footer and browser tab). The original is `assets/img/bersama-bergerak-logo.jpg`.
+- **Colours** come from the logo: navy `#13265a`, blues `#1f63c4` / `#2f7fe6`, with coral and green for data highlights.
+- **Style:** calm, minimal layout with a painted-sky hero (`assets/img/sky.svg`), floating pill navigation, rounded cards and dashboard-style data blocks.
+- **Fonts** are self-hosted in `assets/fonts/` (Inter Tight for headings, Inter for text, Instrument Serif for italic accents), so the site doesn't depend on Google Fonts at the venue.
+- All styles are in `assets/css/style.css`.

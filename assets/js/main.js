@@ -71,3 +71,12 @@
   var year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 })();
+
+// Header gets a soft background once the page scrolls past the hero top
+(function () {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+  var update = function () { header.classList.toggle('scrolled', window.scrollY > 20); };
+  update();
+  window.addEventListener('scroll', update, { passive: true });
+})();
