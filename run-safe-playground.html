@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Run Safe Playground · Bersama Bergerak</title>
-  <meta name="description" content="The Run Safe Playground by Bersama Bergerak × ADEM at UGM Trail Run 2026. Test yourself, play, learn something and take something home.">
+  <meta name="description" content="Run Safe Playground dari Bersama Bergerak × ADEM di UGM Trail Run 2026. Uji dirimu, main, belajar, dan pulang membawa sesuatu.">
+  <link rel="alternate" hreflang="id" href="run-safe-playground.html">
+  <link rel="alternate" hreflang="en" href="en/run-safe-playground.html">
   <meta property="og:title" content="Run Safe Playground · Bersama Bergerak">
-  <meta property="og:description" content="The Run Safe Playground by Bersama Bergerak × ADEM at UGM Trail Run 2026. Test yourself, play, learn something and take something home.">
+  <meta property="og:description" content="Run Safe Playground dari Bersama Bergerak × ADEM di UGM Trail Run 2026. Uji dirimu, main, belajar, dan pulang membawa sesuatu.">
   <meta property="og:image" content="assets/img/bersama-bergerak-logo.jpg">
+  <meta property="og:locale" content="id_ID">
   <meta name="theme-color" content="#13265a">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +19,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main">Langsung ke konten</a>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html" aria-label="Bersama Bergerak — home">
+      <a class="brand" href="index.html" aria-label="Bersama Bergerak — beranda">
         <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false">
   <path d="M76 7 A55 55 0 1 0 104 98" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
   <circle cx="21" cy="62" r="6" fill="currentColor"/>
@@ -33,16 +36,21 @@
 </svg>
         <span class="brand-name">BERSAMA BERGERAK<small>Movement &amp; Active Living Initiative</small></span>
       </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
+      <div class="header-actions">
+        <a class="lang-switch" href="en/run-safe-playground.html" hreflang="en" lang="en" aria-label="English">
+          <span class="on">ID</span><span>EN</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
       <nav class="nav" id="site-nav" aria-label="Main">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
         <a href="run-safe-playground.html" aria-current="page">Run Safe Playground</a>
-        <a href="schedule.html">Schedule</a>
+        <a href="schedule.html">Jadwal</a>
         <a href="runner-reset-guide.html">Runner Reset Guide</a>
-        <a class="btn btn-sm" href="work-with-us.html">Work with us</a>
+        <a class="btn btn-sm" href="work-with-us.html">Kerja Sama</a>
       </nav>
     </div>
   </header>
@@ -50,13 +58,13 @@
   <main id="main">
     <section class="page-hero">
       <div class="wrap">
-        <div class="breadcrumb"><a href="index.html">Home</a> / Run Safe Playground</div>
+        <div class="breadcrumb"><a href="index.html">Beranda</a> / Run Safe Playground</div>
         <span class="eyebrow">Bersama Bergerak × ADEM × UGM Trail Run 2026</span>
         <h1>Run Safe Playground</h1>
-        <p class="lead">Not a health-education booth. A playground for runners: come to test yourself, play, learn something, and go home with something useful. <strong>Protect Yourself. Protect Others.</strong></p>
+        <p class="lead">Bukan booth edukasi kesehatan biasa. Ini tempat bermain untuk pelari: datang untuk menguji diri, main, belajar sesuatu, dan pulang membawa sesuatu yang berguna. <strong>Protect Yourself. Protect Others.</strong></p>
         <div class="btn-row">
-          <a class="btn" href="schedule.html">When &amp; where</a>
-          <a class="btn btn-ghost" href="runner-reset-guide.html">Try it online</a>
+          <a class="btn" href="schedule.html">Kapan &amp; di mana</a>
+          <a class="btn btn-ghost" href="runner-reset-guide.html">Coba secara online</a>
         </div>
       </div>
     </section>
@@ -64,8 +72,8 @@
     <!-- FLOW -->
     <section class="section-navy section-tight">
       <div class="wrap center">
-        <span class="eyebrow">How it works</span>
-        <h2>Five steps, a few minutes</h2>
+        <span class="eyebrow">Cara kerjanya</span>
+        <h2>Lima langkah, hanya beberapa menit</h2>
         <div class="flow mt-2" role="list">
           <span role="listitem">PLAY</span><i aria-hidden="true">→</i>
           <span role="listitem">TEST</span><i aria-hidden="true">→</i>
@@ -73,7 +81,7 @@
           <span role="listitem">TAKE HOME</span><i aria-hidden="true">→</i>
           <span role="listitem">CONNECT</span>
         </div>
-        <p class="mt-2 maxw mx-auto">Runners come to race pack collection to pick up their pack, meet friends, take photos and have fun, not to sit and read long cards. So everything here takes 1 to 3 minutes.</p>
+        <p class="mt-2 maxw mx-auto">Pelari datang ke race pack collection untuk ambil race pack, ketemu teman, foto, dan bersenang-senang, bukan untuk duduk membaca kartu panjang. Jadi semua aktivitas di sini selesai dalam 1–3 menit.</p>
       </div>
     </section>
 
@@ -81,8 +89,8 @@
     <section>
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">The big idea</span>
-          <h2>Two layers of running safely</h2>
+          <span class="eyebrow">Gagasan utama</span>
+          <h2>Dua lapis untuk berlari dengan aman</h2>
         </div>
         <div class="layers">
           <div class="layer layer-you">
@@ -90,7 +98,7 @@
             <div class="by">Bersama Bergerak</div>
             <ul>
               <li>Self-regulation</li>
-              <li>Recognise your body's signals</li>
+              <li>Kenali sinyal tubuh</li>
               <li>Feel → Think → Decide</li>
               <li>Run smart, not just hard</li>
             </ul>
@@ -99,10 +107,10 @@
             <h3>Protect Others</h3>
             <div class="by">ADEM</div>
             <ul>
-              <li>Basic Life Support</li>
-              <li>Know what to do in an emergency</li>
-              <li>CPR (RJP)</li>
-              <li>Be ready to help</li>
+              <li>Bantuan Hidup Dasar</li>
+              <li>Tahu apa yang dilakukan saat darurat</li>
+              <li>RJP / CPR</li>
+              <li>Siap menolong</li>
             </ul>
           </div>
         </div>
@@ -113,35 +121,35 @@
     <section class="section-sand">
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Inside the booth</span>
-          <h2>Three zones to explore</h2>
-          <p>Front of the booth: <strong>“Can you pass the Runner Safety Test?”</strong></p>
+          <span class="eyebrow">Di dalam booth</span>
+          <h2>Tiga zona untuk dijelajahi</h2>
+          <p>Di depan booth: <strong>“Can you pass the Runner Safety Test?”</strong></p>
         </div>
         <div class="grid grid-3">
           <article class="card card-accent">
-            <span class="tag">Zone 1 · Come &amp; play · 1 min</span>
+            <span class="tag">Zona 1 · Come &amp; play · 1 mnt</span>
             <h3>🎡 Spin the Wheel: Run Safe Quiz</h3>
-            <p>Spin, get a question, answer out loud. Fun first, curiosity second, conversation third. Prizes from ADEM.</p>
+            <p>Putar roda, dapat pertanyaan, jawab langsung. Seru dulu, lalu muncul rasa penasaran, lalu obrolan. Ada hadiah dari ADEM.</p>
             <ul class="check small">
-              <li>“Pain or push?”</li>
-              <li>“Rest day or lazy day?”</li>
-              <li>“Cramp: keep running or stop?”</li>
-              <li>“Can you recognise an emergency?”</li>
-              <li>“What should you do first?”</li>
+              <li>“Nyeri: paksa atau berhenti?”</li>
+              <li>“Rest day atau malas?”</li>
+              <li>“Kram: lanjut lari atau stop?”</li>
+              <li>“Bisa mengenali kondisi darurat?”</li>
+              <li>“Apa yang harus dilakukan pertama kali?”</li>
             </ul>
           </article>
           <article class="card card-accent">
-            <span class="tag">Zone 2 · Think · 2–3 min</span>
+            <span class="tag">Zona 2 · Think · 2–3 mnt</span>
             <h3>🧠 The Runner Decision Test</h3>
-            <p>Bersama Bergerak's hero experience. You're given a real running situation and choose what you'd do. Then a facilitator walks you through <strong>Feel → Think → Decide</strong>.</p>
-            <p class="small muted">We don't say “this is the right answer”. We ask: how do you make a better decision when your body and your ego are telling you different things?</p>
-            <a class="btn btn-sm" href="runner-reset-guide.html#decision-test">Try a scenario</a>
+            <p>Pengalaman utama Bersama Bergerak. Kamu diberi situasi nyata sebagai pelari dan memilih apa yang akan kamu lakukan. Lalu fasilitator mengajakmu melihat prosesnya: <strong>Feel → Think → Decide</strong>.</p>
+            <p class="small muted">Kami tidak bilang “ini jawaban yang benar”. Kami bertanya: bagaimana mengambil keputusan yang lebih baik ketika tubuh dan egomu mengatakan hal yang berbeda?</p>
+            <a class="btn btn-sm" href="runner-reset-guide.html#decision-test">Coba skenarionya</a>
           </article>
           <article class="card card-accent-coral">
-            <span class="tag tag-coral">Zone 3 · Act · 2–3 min</span>
+            <span class="tag tag-coral">Zona 3 · Act · 2–3 mnt</span>
             <h3>❤️ CPR Battle</h3>
-            <p>ADEM's hero experience: <strong>“Can you save a life?”</strong> Practise CPR on a manikin for 30 to 60 seconds, get scored, battle a friend, win a prize.</p>
-            <p class="small muted">Open to runners, pacers, sweepers, marshals, communities and anyone visiting. Learn more at <a href="https://ademsigap.com" target="_blank" rel="noopener">ademsigap.com</a>.</p>
+            <p>Pengalaman utama ADEM: <strong>“Can you save a life?”</strong> Praktik RJP pada manekin selama 30–60 detik, dinilai, adu dengan teman, dan menangkan hadiah.</p>
+            <p class="small muted">Terbuka untuk pelari, pacer, sweeper, marshal, komunitas, dan semua pengunjung. Pelajari lebih lanjut di <a href="https://ademsigap.com" target="_blank" rel="noopener">ademsigap.com</a>.</p>
           </article>
         </div>
       </div>
@@ -151,23 +159,23 @@
     <section>
       <div class="wrap split">
         <div>
-          <span class="eyebrow">Example scenario</span>
-          <h2>KM 8. What would you do?</h2>
-          <p>Your pace is still good. You have to work tomorrow. Your friend shouts: <strong>“Gas! Only 2 km left!”</strong> And your knee is starting to feel uncomfortable.</p>
+          <span class="eyebrow">Contoh skenario</span>
+          <h2>KM 8. Apa yang akan kamu lakukan?</h2>
+          <p>Pace masih bagus. Besok kamu harus kerja. Temanmu teriak: <strong>“Gas! Tinggal 2 km!”</strong> Dan lututmu mulai terasa tidak nyaman.</p>
           <ul class="steps lettered">
-            <li>A. Gas. Don't be weak.</li>
-            <li>B. Slow down &amp; assess.</li>
-            <li>C. Stop &amp; reassess.</li>
-            <li>D. Depends.</li>
+            <li>A. Gas. Jangan lemah.</li>
+            <li>B. Pelankan &amp; cek kondisi.</li>
+            <li>C. Berhenti &amp; evaluasi ulang.</li>
+            <li>D. Tergantung.</li>
           </ul>
         </div>
         <div class="quiz" style="margin:0">
-          <div class="q">There's no trick answer.</div>
-          <p>What matters is <em>how</em> you decide. That's what we practise together:</p>
+          <div class="q">Tidak ada jawaban jebakan.</div>
+          <p>Yang penting adalah <em>bagaimana</em> kamu memutuskan. Itulah yang kita latih bersama:</p>
           <div class="ftd" style="grid-template-columns:1fr">
-            <div class="step"><b>FEEL</b><p>What is my knee actually telling me?</p></div>
-            <div class="step"><b>THINK</b><p>What's driving me: my body, my goal, or my ego?</p></div>
-            <div class="step"><b>DECIDE</b><p>What's the smarter call, today and for tomorrow?</p></div>
+            <div class="step"><b>FEEL</b><p>Sebenarnya apa yang disampaikan lututku?</p></div>
+            <div class="step"><b>THINK</b><p>Apa yang mendorongku: tubuh, target, atau ego?</p></div>
+            <div class="step"><b>DECIDE</b><p>Apa keputusan paling cerdas, untuk hari ini dan untuk besok?</p></div>
           </div>
         </div>
       </div>
@@ -177,16 +185,16 @@
     <section class="section-tint">
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Mini stage · Friday at GIK</span>
+          <span class="eyebrow">Mini stage · Jumat di GIK</span>
           <h2>RUN SAFE: Before You Run</h2>
-          <p>A 25 to 30 minute joint session on the GIK mini stage. The stage brings people in, and the booth is where they try it themselves.</p>
+          <p>Sesi bersama 25–30 menit di mini stage GIK. Panggung menarik perhatian, booth menjadi tempat mencoba langsung.</p>
         </div>
         <div class="card maxw mx-auto">
-          <div class="slot"><time>5 min</time><div><h4>Opening by the host</h4><p>“What's the one thing runners often ignore?”</p></div></div>
-          <div class="slot"><time>7 min</time><div><h4>Bersama Bergerak</h4><p>When should you push, and when should you stop? Feel → Think → Decide.</p></div></div>
-          <div class="slot"><time>8 min</time><div><h4>ADEM</h4><p>Would you know what to do if your running buddy collapsed? A short CPR demo.</p></div></div>
-          <div class="slot"><time>5–10 min</time><div><h4>CPR Battle on stage</h4><p>2 or 3 people come up and battle. Prizes for the winners.</p></div></div>
-          <div class="slot"><time>After</time><div><h4>“Want to try it yourself? Come to Booth #9.”</h4><p>The fun continues at the Run Safe Playground.</p></div></div>
+          <div class="slot"><time>5 mnt</time><div><h4>Pembukaan oleh host</h4><p>“Apa satu hal yang paling sering diabaikan pelari?”</p></div></div>
+          <div class="slot"><time>7 mnt</time><div><h4>Bersama Bergerak</h4><p>Kapan harus push, dan kapan harus berhenti? Feel → Think → Decide.</p></div></div>
+          <div class="slot"><time>8 mnt</time><div><h4>ADEM</h4><p>Tahukah kamu apa yang harus dilakukan kalau teman larimu tiba-tiba kolaps? Demo singkat RJP.</p></div></div>
+          <div class="slot"><time>5–10 mnt</time><div><h4>CPR Battle di panggung</h4><p>2–3 peserta naik ke panggung dan beradu. Ada hadiah untuk pemenang.</p></div></div>
+          <div class="slot"><time>Setelahnya</time><div><h4>“Mau coba sendiri? Datang ke Booth #9.”</h4><p>Keseruan berlanjut di Run Safe Playground.</p></div></div>
         </div>
       </div>
     </section>
@@ -195,21 +203,21 @@
     <section>
       <div class="wrap split">
         <div>
-          <span class="eyebrow">Special session</span>
+          <span class="eyebrow">Sesi khusus</span>
           <h2>Run Crew Ready</h2>
-          <p class="lead">For pacers, sweepers and marshals.</p>
-          <p><strong>“You don't just guide runners. You may be the first person they need.”</strong></p>
-          <p>UGM Trail Run isn't only preparing its runners. It's also preparing the people who look after them. This short session gives the crew basic emergency skills. Other visitors are welcome to join and watch.</p>
+          <p class="lead">Untuk pacer, sweeper, dan marshal.</p>
+          <p><strong>“Kamu bukan hanya memandu pelari. Bisa jadi kamu orang pertama yang mereka butuhkan.”</strong></p>
+          <p>UGM Trail Run tidak hanya menyiapkan pelarinya, tetapi juga orang-orang yang menjaga para pelari. Sesi singkat ini membekali kru dengan kemampuan dasar menghadapi kondisi darurat. Pengunjung umum boleh ikut menyimak.</p>
         </div>
         <div class="card card-accent">
-          <h3>What's covered</h3>
+          <h3>Materi</h3>
           <ul class="check">
-            <li>Recognising an emergency</li>
-            <li>When to stop a runner or get help</li>
-            <li>How to talk with a runner who's struggling</li>
-            <li>Basic CPR awareness</li>
+            <li>Mengenali kondisi darurat</li>
+            <li>Kapan harus menghentikan pelari atau mencari bantuan</li>
+            <li>Cara berkomunikasi dengan pelari yang kesulitan</li>
+            <li>Awareness dasar RJP</li>
           </ul>
-          <p class="small muted">Run by ADEM with Bersama Bergerak. See the <a href="schedule.html">schedule</a> for times.</p>
+          <p class="small muted">Dipandu ADEM bersama Bersama Bergerak. Lihat <a href="schedule.html">jadwal</a> untuk waktunya.</p>
         </div>
       </div>
     </section>
@@ -218,32 +226,32 @@
     <section class="section-sand">
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Find your way around</span>
-          <h2>Booth layouts</h2>
+          <span class="eyebrow">Denah booth</span>
+          <h2>Tata letak booth</h2>
         </div>
         <div class="grid grid-2">
           <div>
-            <h3>GIK Race Pack Collection · Booth #9 · 2 × 2 m</h3>
-            <p class="muted small">Small and simple: three quick activities and one QR wall.</p>
+            <h3>Race Pack Collection GIK · Booth #9 · 2 × 2 m</h3>
+            <p class="muted small">Kecil dan sederhana: tiga aktivitas cepat dan satu QR wall.</p>
             <div class="booth">
               <div class="front">RUN SAFE PLAYGROUND · CAN YOU PASS THE RUNNER SAFETY TEST?</div>
               <div class="zones">
-                <div class="zone">🎡 Spin the Wheel<small>1 min · BB</small></div>
-                <div class="zone">🧠 Decision Test<small>2–3 min · BB</small></div>
-                <div class="zone adem">❤️ CPR Battle<small>2–3 min · ADEM</small></div>
+                <div class="zone">🎡 Spin the Wheel<small>1 mnt · BB</small></div>
+                <div class="zone">🧠 Decision Test<small>2–3 mnt · BB</small></div>
+                <div class="zone adem">❤️ CPR Battle<small>2–3 mnt · ADEM</small></div>
               </div>
-              <div class="back">QR WALL · TAKE THIS HOME · Free Runner Reset Guide + ADEM</div>
+              <div class="back">QR WALL · TAKE THIS HOME · Runner Reset Guide gratis + ADEM</div>
             </div>
           </div>
           <div>
             <h3>Race Village · 3 × 3 m</h3>
-            <p class="muted small">More room, more immersive.</p>
+            <p class="muted small">Ruang lebih luas, pengalaman lebih imersif.</p>
             <div class="booth">
               <div class="front">🏃 RUN SAFE PLAYGROUND</div>
               <div class="zones">
-                <div class="zone">Left<small>Spin Wheel · BB</small></div>
-                <div class="zone">Centre<small>Runner Decision Test · BB</small></div>
-                <div class="zone adem">Right<small>CPR Battle · ADEM</small></div>
+                <div class="zone">Kiri<small>Spin Wheel · BB</small></div>
+                <div class="zone">Tengah<small>Runner Decision Test · BB</small></div>
+                <div class="zone adem">Kanan<small>CPR Battle · ADEM</small></div>
               </div>
               <div class="back">TAKE HOME YOUR RUNNER RESET · QR: BB Runner Reset Guide · ADEM Emergency Learning</div>
             </div>
@@ -256,26 +264,26 @@
     <section>
       <div class="wrap">
         <div class="section-head">
-          <span class="eyebrow">Designed for runners</span>
-          <h2>No homework. Just a quick, useful experience.</h2>
+          <span class="eyebrow">Dirancang untuk pelari</span>
+          <h2>Tanpa tugas. Hanya pengalaman singkat yang berguna.</h2>
         </div>
         <div class="grid grid-2 maxw mx-auto">
           <div class="card">
-            <h3>What you won't find</h3>
+            <h3>Yang tidak akan kamu temui</h3>
             <ul class="check cross">
-              <li>Commitment cards you have to fill in</li>
-              <li>Long sticky notes</li>
-              <li>Reflection questions that take ages</li>
-              <li>Education that feels like a seminar</li>
+              <li>Kartu komitmen yang harus diisi</li>
+              <li>Sticky notes panjang</li>
+              <li>Pertanyaan reflektif yang makan waktu</li>
+              <li>Edukasi yang terasa seperti seminar</li>
             </ul>
           </div>
           <div class="card">
-            <h3>What you will find</h3>
+            <h3>Yang akan kamu temui</h3>
             <ul class="check">
-              <li>Come → choose → get your insight → go</li>
-              <li>Games, a quiz and friendly battles</li>
-              <li>Real runner scenarios</li>
-              <li>A free guide to take home</li>
+              <li>Datang → pilih → dapat insight → lanjut</li>
+              <li>Games, kuis, dan battle yang seru</li>
+              <li>Skenario pelari yang nyata</li>
+              <li>Panduan gratis untuk dibawa pulang</li>
             </ul>
           </div>
         </div>
@@ -284,10 +292,10 @@
 
     <section class="section-navy cta-band">
       <div class="wrap">
-        <h2>Bersama Bergerak is the thinking part. ADEM is the action part.</h2>
-        <p class="maxw mx-auto">UGM Trail Run is where the two meet. Come and find us.</p>
+        <h2>Bersama Bergerak adalah sisi berpikir. ADEM adalah sisi bertindak.</h2>
+        <p class="maxw mx-auto">UGM Trail Run adalah tempat keduanya bertemu. Sampai jumpa di sana.</p>
         <div class="btn-row" style="justify-content:center">
-          <a class="btn btn-light" href="schedule.html">See the schedule</a>
+          <a class="btn btn-light" href="schedule.html">Lihat jadwal</a>
         </div>
       </div>
     </section>
@@ -297,7 +305,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div>
-          <a class="brand" href="index.html" aria-label="Bersama Bergerak — home">
+          <a class="brand" href="index.html" aria-label="Bersama Bergerak — beranda">
             <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false">
   <path d="M76 7 A55 55 0 1 0 104 98" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
   <circle cx="21" cy="62" r="6" fill="currentColor"/>
@@ -310,7 +318,7 @@
 </svg>
             <span class="brand-name">BERSAMA BERGERAK<small>Movement &amp; Active Living Initiative</small></span>
           </a>
-          <p>Behavioral wellness programs that help people make better everyday decisions about how they move, rest and recover.</p>
+          <p>Mendukung orang untuk memulai gaya hidup sehat dan aktif, lalu menjaganya agar berkelanjutan.</p>
           <div class="social">
             <a href="https://instagram.com/bersamabergerak.id" aria-label="Instagram @bersamabergerak.id" rel="noopener" target="_blank">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
@@ -318,30 +326,30 @@
           </div>
         </div>
         <div>
-          <h4>Explore</h4>
+          <h4>Jelajahi</h4>
           <ul>
-            <li><a href="about.html">About us</a></li>
+            <li><a href="about.html">Tentang kami</a></li>
             <li><a href="run-safe-playground.html">Run Safe Playground</a></li>
-            <li><a href="schedule.html">Schedule &amp; booths</a></li>
+            <li><a href="schedule.html">Jadwal &amp; booth</a></li>
             <li><a href="runner-reset-guide.html">Runner Reset Guide</a></li>
           </ul>
         </div>
         <div>
-          <h4>Work with us</h4>
+          <h4>Kerja sama</h4>
           <ul>
-            <li><a href="work-with-us.html#audiences">Workplaces</a></li>
-            <li><a href="work-with-us.html#audiences">Campuses &amp; institutions</a></li>
-            <li><a href="work-with-us.html#audiences">Running communities</a></li>
-            <li><a href="work-with-us.html#audiences">Sports events &amp; EO</a></li>
+            <li><a href="work-with-us.html#audiences">Tempat kerja</a></li>
+            <li><a href="work-with-us.html#audiences">Kampus &amp; institusi</a></li>
+            <li><a href="work-with-us.html#audiences">Komunitas lari</a></li>
+            <li><a href="work-with-us.html#audiences">Event olahraga &amp; EO</a></li>
           </ul>
         </div>
         <div>
-          <h4>Connect</h4>
+          <h4>Terhubung</h4>
           <ul>
             <li><a href="https://instagram.com/bersamabergerak.id" target="_blank" rel="noopener">@bersamabergerak.id</a></li>
-            <li><a href="work-with-us.html#talk">Talk to us</a></li>
-            <li><a href="https://ademsigap.com" target="_blank" rel="noopener">Partner: ADEM (ademsigap.com)</a></li>
-            <li><a href="partner-brief.html">Partner &amp; committee brief</a></li>
+            <li><a href="work-with-us.html#talk">Hubungi kami</a></li>
+            <li><a href="https://ademsigap.com" target="_blank" rel="noopener">Mitra: ADEM (ademsigap.com)</a></li>
+            <li><a href="partner-brief.html">Brief mitra &amp; panitia</a></li>
           </ul>
         </div>
       </div>

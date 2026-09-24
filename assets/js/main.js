@@ -35,8 +35,15 @@
 
       var data = new FormData(form);
       var interests = data.getAll('interest');
-      var lines = [
-        'Halo BersamaBergerak! I just visited the Run Safe Playground.',
+      var id = document.documentElement.lang === 'id';
+      var lines = id ? [
+        'Halo Bersama Bergerak! Saya baru mengunjungi website/booth Run Safe Playground.',
+        'Nama: ' + (data.get('name') || '-'),
+        'Organisasi / komunitas / kampus: ' + (data.get('org') || '-'),
+        'WhatsApp: ' + (data.get('whatsapp') || '-'),
+        'Tertarik dengan: ' + (interests.length ? interests.join(', ') : '-')
+      ] : [
+        'Hi Bersama Bergerak! I just visited the Run Safe Playground.',
         'Name: ' + (data.get('name') || '-'),
         'Organization / community: ' + (data.get('org') || '-'),
         'WhatsApp: ' + (data.get('whatsapp') || '-'),

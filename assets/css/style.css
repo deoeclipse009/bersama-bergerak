@@ -425,3 +425,50 @@ table.compact { min-width: 0; }
 /* Lettered option list (scenario answers) */
 .steps.lettered li { counter-increment: none; padding-left: 20px; }
 .steps.lettered li::before { display: none; }
+
+/* Language switch */
+.header-actions { display: flex; align-items: center; gap: 8px; order: 3; }
+.lang-switch {
+  display: inline-flex; border: 1.5px solid var(--line); border-radius: 999px; padding: 3px;
+  text-decoration: none; font-size: 12.5px; font-weight: 800; letter-spacing: .04em;
+}
+.lang-switch span { padding: 5px 10px; border-radius: 999px; color: var(--ink-soft); }
+.lang-switch span.on { background: var(--navy-800); color: #fff; }
+.lang-switch:hover { border-color: var(--blue-500); }
+.lang-switch:hover span:not(.on) { color: var(--blue-600); }
+@media (min-width: 961px) { .site-header .nav { order: 2; margin-left: auto; } .site-header .brand { margin-right: 8px; } }
+
+/* Keep header items on one line; switch to the menu button earlier */
+.nav a, .brand-name, .brand-name small { white-space: nowrap; }
+.nav a { padding: 8px 10px; }
+@media (max-width: 1140px) {
+  .nav-toggle { display: grid; }
+  .site-header .nav {
+    display: none; position: absolute; top: 68px; left: 0; right: 0; margin: 0;
+    flex-direction: column; align-items: stretch; gap: 2px;
+    background: #fff; border-bottom: 1px solid var(--line); padding: 10px 16px 18px;
+    box-shadow: var(--shadow);
+  }
+  .site-header .nav.open { display: flex; }
+  .nav a { padding: 12px 14px; border-radius: 10px; }
+  .nav .btn { margin: 8px 0 0; text-align: center; }
+}
+@media (max-width: 400px) { .brand-name small { display: none; } }
+
+/* Audience tiles stay two per row on phones */
+@media (max-width: 620px) { .grid-audience { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+@media (max-width: 480px) {
+  .site-header .brand svg { width: 34px; height: 34px; }
+  .site-header .brand-name { font-size: 13px; }
+  .site-header .brand { gap: 8px; }
+  .lang-switch span { padding: 4px 8px; }
+  .nav-toggle { width: 40px; height: 40px; }
+}
+@media (max-width: 360px) { .site-header .brand-name { white-space: normal; width: 80px; } }
+@media (min-width: 1141px) {
+  .site-header .wrap { gap: 12px; }
+  .site-header .nav { gap: 0; }
+  .site-header .nav a:not(.btn) { font-size: 14px; padding: 8px 9px; }
+  .site-header .nav .btn { margin-left: 6px; }
+  .site-header .brand { margin-right: 0; }
+}
