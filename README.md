@@ -19,15 +19,14 @@ Every page has an **ID / EN** switch in the header that jumps to the same page i
 | `about.html` | Who we are, Feel → Think → Decide, principles, ADEM partnership |
 | `run-safe-playground.html` | The booth concept: zones, Runner Decision Test, CPR Battle, mini stage, Run Crew Ready, booth layouts |
 | `schedule.html` | Where and when: 25–27 Sept 2026, GIK and Race Village |
-| `runner-reset-guide.html` | QR landing page: interactive 1-Minute Runner Check, 5-question guide, Runner Decision Test |
+| `runner-reset-guide.html` | QR landing page: the Runner Reset booklet (sections 01–10, with tick-able checklists and a printable signal log), plus the 1-Minute Runner Check and Runner Decision Test |
 | `work-with-us.html` | "Bring this to your community" + short lead form |
 | `partner-brief.html` | Operational brief for the committee / ADEM / internal team (linked from the footer only, `noindex`) |
 
 ## Before the event
 
 - **QR code:** point the booth QR at `runner-reset-guide.html` (Indonesian) once the site is hosted.
-- **Lead form:** put the team's WhatsApp number in `data-whatsapp` on the `<form id="lead-form">` in both `work-with-us.html` and `en/work-with-us.html` (format `628xxxxxxxxxx`). Submissions then open WhatsApp with the visitor's answers pre-filled. Without a number, the visitor sees a summary and is asked to DM @bersamabergerak.id.
-- Times marked *tentative* on `schedule.html` should be updated when the final rundown is confirmed.
+- **Lead form:** sends to WhatsApp 0896-2760-9295 (`data-whatsapp="6289627609295"` in `work-with-us.html` and `en/work-with-us.html`). It opens WhatsApp with the visitor's answers pre-filled; nothing is stored on the site.
 
 ## Design
 

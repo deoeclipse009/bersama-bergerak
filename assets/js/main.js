@@ -80,3 +80,14 @@
   update();
   window.addEventListener('scroll', update, { passive: true });
 })();
+
+// Runner Reset Guide: print only the signal log
+(function () {
+  var btn = document.querySelector('[data-print-log]');
+  if (!btn) return;
+  btn.addEventListener('click', function () {
+    document.body.classList.add('printing-log');
+    window.print();
+    document.body.classList.remove('printing-log');
+  });
+})();
