@@ -9,7 +9,6 @@ No build step: open `index.html` in a browser, or host the folder on any static 
 - **Bahasa Indonesia (main):** the root folder (`index.html`, `about.html`, …).
 - **English:** the same pages inside `en/` (`en/index.html`, …).
 
-Every page has an **ID / EN** switch in the header that jumps to the same page in the other language. When editing text, update both versions. The partner brief is in Indonesian only.
 
 ## Pages
 
@@ -21,7 +20,6 @@ Every page has an **ID / EN** switch in the header that jumps to the same page i
 | `schedule.html` | Where and when: 25–27 Sept 2026, GIK and Race Village |
 | `runner-reset-guide.html` | QR landing page: the Runner Reset booklet (sections 01–10, with tick-able checklists and a printable signal log), plus the 1-Minute Runner Check and Runner Decision Test |
 | `work-with-us.html` | "Bring this to your community" + short lead form |
-| `partner-brief.html` | Operational brief for the committee / ADEM / internal team (linked from the footer only, `noindex`) |
 
 ## Before the event
 

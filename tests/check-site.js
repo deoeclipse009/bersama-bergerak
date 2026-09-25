@@ -4,7 +4,7 @@ const fs = require('fs'), path = require('path');
 // Run: node tests/check-site.js  (needs Playwright + Chromium)
 const ROOT = path.resolve(__dirname, '..') + '/', U = f => 'file://' + ROOT + f;
 const base = ['index.html','about.html','run-safe-playground.html','schedule.html','runner-reset-guide.html','work-with-us.html'];
-const pages = base.concat(['partner-brief.html'], base.map(f => 'en/' + f));
+const pages = base.concat(base.map(f => 'en/' + f));
 const fails = []; const ok = (c, m) => { if (!c) fails.push(m); return c; };
 let n = 0; const t = (c, m) => { n++; ok(c, m); };
 (async () => {
@@ -82,7 +82,7 @@ let n = 0; const t = (c, m) => { n++; ok(c, m); };
       // language switch
       const sw = await p.getAttribute('.lang-switch', 'href');
       await p.click('.lang-switch'); await p.waitForLoadState();
-      const exp = f === 'partner-brief.html' ? 'en/index.html' : (f.startsWith('en/') ? f.slice(3) : 'en/' + f);
+      const exp = f.startsWith('en/') ? f.slice(3) : 'en/' + f;
       t(p.url() === U(exp), `${f}: language switch went to ${p.url()} (href ${sw})`);
       await p.close();
     }
